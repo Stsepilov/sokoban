@@ -68,21 +68,21 @@ def main():
     off_btn.rect = off_btn.image.get_rect()
     off_btn.rect.x = 1300
 
-    img_screen = pygame.image.load("1.png")
+    img_screen = pygame.image.load("backgroundimage.png")
     img_start = pygame.image.load("start.png")
     img_over = pygame.image.load('gameover.png')
     img_win = pygame.image.load('win.png')
     pygame.mixer.music.load('background.mp3')
     pygame.mixer.music.set_volume(0.03)
     paddle = pygame.sprite.Sprite(sprites)
-    paddle.image = load_image("1234.png")
+    paddle.image = load_image("paddle.png")
     paddle.rect = paddle.image.get_rect()
     sprites.add(paddle)
     paddle.rect.x = 483
     n, k, d, h = 0, 0, 0, 0
     paddle.rect.y = 700
     ball = pygame.sprite.Sprite(sprites)
-    ball.image = load_image("123.png")
+    ball.image = load_image("ball.png")
     ball.rect = ball.image.get_rect()
     ball.rect.x = 640
     sprites.add(paddle)
